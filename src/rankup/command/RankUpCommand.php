@@ -10,7 +10,7 @@ use rankup\RankUp;
 class RankUpCommand extends Command implements PluginIdentifiableCommand{
     private $main;
     public function __construct(RankUp $main){
-        parent::__construct("rankup", "Get all the ranks.", "/rankup", ["ru"]);
+        parent::__construct("rankup", "Get all the ranks.", "/rankup", ["rankup"]);
         $this->main = $main;
     }
     public function execute(CommandSender $sender, $label, array $args){
